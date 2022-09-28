@@ -34,6 +34,16 @@ class MaterialIcon
   end
 
   #
+  # Define style methods
+  #
+  %w(outlined round sharp twotone).each do |style|
+    define_method(style) do
+      @style = style
+      self
+    end
+  end
+
+  #
   # Set the shape of the icon you want to use
   #
   # == Paremeters:
