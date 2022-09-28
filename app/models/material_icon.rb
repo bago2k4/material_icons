@@ -9,7 +9,7 @@ class MaterialIcon
   # Reset will set all variables to nil
   #
   def reset
-    @icon, @rotation, @size, @html, @style, @css_class = [nil] * 6
+    @icon, @rotation, @size, @html, @style, @icon_style, @icon_names, @css_class = [nil] * 6
     self
   end
 
@@ -36,9 +36,9 @@ class MaterialIcon
   #
   # Define style methods
   #
-  %w(outlined round sharp twotone).each do |style|
-    define_method(style) do
-      @style = style
+  %w(outlined round sharp twotone).each do |icon_style|
+    define_method(icon_style) do
+      @icon_style = "-#{icon_style}"
       self
     end
   end
@@ -115,7 +115,7 @@ class MaterialIcon
     @html = @html.nil? || !@html.is_a?(Hash) ? {} : @html
 
     # Create the icon
-    content_tag(:i, "#{@icon}",
+    content_tag(:i, "#{@icon}#{@icon_style}",
                 @html.merge(
                   style: @style,
                   class: "material-icons#{@size}#{@rotation}#{@css_class}"))
@@ -134,5 +134,20 @@ class MaterialIcon
   #
   def to_ary
     nil
+  end
+
+  # def self.icon_names
+  #   asd = []
+  #   YAML.safe_load(File.read(__dir__ + '/../../icons/versions.yml'))['icons'].to_a.each do |icon_name|
+  #     asd << "Will create method for: #{icon_name}"
+  #   end
+  #   asd
+  # end
+
+  YAML.safe_load(File.read(__dir__ + '/../../icons/versions.yml'))['icons'].to_a.each do |icon_name|
+    define_method(icon_name.to_s) do
+      @icon = icon_name.to_s
+      self
+    end
   end
 end
