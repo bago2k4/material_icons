@@ -38,7 +38,7 @@ class MaterialIcon
   #
   %w(outlined round sharp twotone).each do |icon_style|
     define_method(icon_style) do
-      @icon_style = "-#{icon_style}"
+      @icon_style = " #{icon_style}"
       self
     end
   end
@@ -115,10 +115,10 @@ class MaterialIcon
     @html = @html.nil? || !@html.is_a?(Hash) ? {} : @html
 
     # Create the icon
-    content_tag(:i, "#{@icon}#{@icon_style}",
+    content_tag(:i, "#{@icon}",
                 @html.merge(
                   style: @style,
-                  class: "material-icons#{@size}#{@rotation}#{@css_class}"))
+                  class: "material-icons#{@icon_style}#{@size}#{@rotation}#{@css_class}"))
   end
 
   # Fix #13. Some Rails methods uses to_str instead of to_s. In this case, to_str is handled
