@@ -118,7 +118,7 @@ class MaterialIcon
     content_tag(:i, "",
                 @html.merge(
                   style: @style,
-                  class: "material-icons#{@icon_style}#{@size}#{@rotation}#{@css_class} #{@icon.gsub('_', '-')}"))
+                  class: "material-icons#{@icon_style}#{@size}#{@rotation}#{@css_class} #{@icon}"))
   end
 
   # Fix #13. Some Rails methods uses to_str instead of to_s. In this case, to_str is handled

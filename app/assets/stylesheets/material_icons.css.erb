@@ -225,12 +225,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+[data-mi-icon]:after {
+  content: attr(data-mi-icon);
+}
+
+[data-material-icon]:after {
+  content: attr(data-material-icon);
+}
+
 <% MaterialIcon.icon_names.each do |icon_name| %>
-  .material-icons.<%= icon_name.to_s.gsub('_', '-') %>:after, .mi.<%= icon_name.to_s.gsub('_', '-') %>:after,
-  .material-icons-outlined.<%= icon_name.to_s.gsub('_', '-') %>:after, .mi-outlined.<%= icon_name.to_s.gsub('_', '-') %>:after,
-  .material-icons-sharp.<%= icon_name.to_s.gsub('_', '-') %>:after, .mi-sharp.<%= icon_name.to_s.gsub('_', '-') %>:after,
-  .material-icons-round.<%= icon_name.to_s.gsub('_', '-') %>:after, .mi-round.<%= icon_name.to_s.gsub('_', '-') %>:after,
-  .material-icons-twotone.<%= icon_name.to_s.gsub('_', '-') %>:after, .mi-twotone.<%= icon_name.to_s.gsub('_', '-') %>:after {
-    content: <%= icon_name.to_s.gsub('_', '-') %>;
+  .material-icons.<%= icon_name.to_s %>:after, .mi.<%= icon_name.to_s %>:after,
+  .material-icons-outlined.<%= icon_name.to_s %>:after, .mi-outlined.<%= icon_name.to_s %>:after,
+  .material-icons-sharp.<%= icon_name.to_s %>:after, .mi-sharp.<%= icon_name.to_s %>:after,
+  .material-icons-round.<%= icon_name.to_s %>:after, .mi-round.<%= icon_name.to_s %>:after,
+  .material-icons-twotone.<%= icon_name.to_s %>:after, .mi-twotone.<%= icon_name.to_s %>:after {
+    content: '<%= icon_name.to_s %>';
   }
 <% end %>
