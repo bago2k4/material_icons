@@ -226,11 +226,11 @@
 }
 
 <% MaterialIcon.icon_names.each do |icon_name| %>
-  .material-icons.<%= icon_name.gsub('_', '-') %>:after, .mi.<%= icon_name.gsub('_', '-') %>:after,
-  .material-icons-outlined.<%= icon_name.gsub('_', '-') %>:after, .mi-outlined.<%= icon_name.gsub('_', '-') %>:after,
-  .material-icons-sharp.<%= icon_name.gsub('_', '-') %>:after, .mi-sharp.<%= icon_name.gsub('_', '-') %>:after,
-  .material-icons-round.<%= icon_name.gsub('_', '-') %>:after, .mi-round.<%= icon_name.gsub('_', '-') %>:after,
-  .material-icons-twotone.<%= icon_name.gsub('_', '-') %>:after, .mi-twotone.<%= icon_name.gsub('_', '-') %>:after {
-    content: <%= icon_name.gsub('_', '-') %>;
+  .material-icons.<%= icon_name.to_s.gsub('_', '-') %>:after, .mi.<%= icon_name.to_s.gsub('_', '-') %>:after,
+  .material-icons-outlined.<%= icon_name.to_s.gsub('_', '-') %>:after, .mi-outlined.<%= icon_name.to_s.gsub('_', '-') %>:after,
+  .material-icons-sharp.<%= icon_name.to_s.gsub('_', '-') %>:after, .mi-sharp.<%= icon_name.to_s.gsub('_', '-') %>:after,
+  .material-icons-round.<%= icon_name.to_s.gsub('_', '-') %>:after, .mi-round.<%= icon_name.to_s.gsub('_', '-') %>:after,
+  .material-icons-twotone.<%= icon_name.to_s.gsub('_', '-') %>:after, .mi-twotone.<%= icon_name.to_s.gsub('_', '-') %>:after {
+    content: <%= icon_name.to_s.gsub('_', '-') %>;
   }
 <% end %>
