@@ -115,10 +115,10 @@ class MaterialIcon
     @html = @html.nil? || !@html.is_a?(Hash) ? {} : @html
 
     # Create the icon
-    content_tag(:i, "#{@icon}",
+    content_tag(:i, "",
                 @html.merge(
                   style: @style,
-                  class: "material-icons#{@icon_style}#{@size}#{@rotation}#{@css_class}"))
+                  class: "material-icons#{@icon_style}#{@size}#{@rotation}#{@css_class} #{@icon.gsub('_', '-')}"))
   end
 
   # Fix #13. Some Rails methods uses to_str instead of to_s. In this case, to_str is handled
@@ -144,7 +144,11 @@ class MaterialIcon
   #   asd
   # end
 
-  YAML.safe_load(File.read(__dir__ + '/../../icons/versions.yml'))['icons'].to_a.each do |icon_name|
+  def self.icon_names
+    YAML.safe_load(File.read(__dir__ + '/../../icons/versions.yml'))['icons']
+  end
+
+  self.icon_names.each do |icon_name|
     define_method(icon_name.to_s) do
       @icon = icon_name.to_s
       self
