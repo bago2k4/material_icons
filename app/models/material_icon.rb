@@ -9,7 +9,7 @@ class MaterialIcon
   # Reset will set all variables to nil
   #
   def reset
-    @icon, @rotation, @size, @html, @style, @icon_style, @icon_names, @css_class = [nil] * 6
+    @icon, @rotation, @size, @html, @style, @icon_style, @icon_names, @tooltip_copy, @css_class = [nil] * 6
     self
   end
 
@@ -89,6 +89,21 @@ class MaterialIcon
   end
 
   #
+  # Add CSS properties to :i tag
+  #
+  # == Paremeters:
+  # title::
+  #    String with CSS rules
+  #
+  # == Returns:
+  # MaterialIcon instance
+  #
+  def tooltip_copy(copy = '')
+    @tooltip_copy = copy
+    self
+  end
+
+  #
   # Add HTML options to :i tag.
   #
   # == Paremeters:
@@ -118,6 +133,7 @@ class MaterialIcon
     content_tag(:i, "",
                 @html.merge(
                   style: @style,
+                  title: @tooltip_copy,
                   class: "material-icons#{@icon_style}#{@size}#{@rotation}#{@css_class} #{@icon}"))
   end
 
