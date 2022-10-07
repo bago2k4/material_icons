@@ -5,6 +5,8 @@ class MaterialIcon
   # To use content_tag
   include ActionView::Helpers::TagHelper
 
+  @@rotations = %w(45 90 135 180 225 270 315)
+
   #
   # Reset will set all variables to nil
   #
@@ -16,7 +18,7 @@ class MaterialIcon
   #
   # Define rotate methods
   #
-  %w(r90 r180 r270 flip_horizontal flip_vertical).each do |rotation|
+  %w(flip_horizontal flip_vertical).append(*self.class_variable_get("@@rotations").map { |x| "r#{x}" }).each do |rotation|
     define_method(rotation) do
       @rotation = " #{rotation.gsub('_', '-')}"
       self
@@ -169,5 +171,9 @@ class MaterialIcon
       @icon = icon_name.to_s
       self
     end
+  end
+
+  def self.rotations
+    %w(r90 r180 r270 flip_horizontal flip_vertical)
   end
 end
