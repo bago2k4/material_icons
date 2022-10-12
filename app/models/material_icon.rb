@@ -11,7 +11,7 @@ class MaterialIcon
   # Reset will set all variables to nil
   #
   def reset
-    @icon, @rotation, @size, @html, @style, @icon_style, @icon_names, @tooltip_copy, @css_class = [nil] * 6
+    @icon, @rotation, @size, @html, @style, @icon_style, @icon_names, @tooltip_copy, @click_action, @css_class = [nil] * 6
     self
   end
 
@@ -106,6 +106,21 @@ class MaterialIcon
   end
 
   #
+  # Add onclick action to the HTML tag
+  #
+  # == Paremeters:
+  # click_action::
+  #    String with the click action
+  #
+  # == Returns:
+  # MaterialIcon instance
+  #
+  def click(click_action = '')
+    @click_action = click_action
+    self
+  end
+
+  #
   # Add HTML options to :i tag.
   #
   # == Paremeters:
@@ -136,6 +151,7 @@ class MaterialIcon
                 @html.merge(
                   style: @style,
                   title: @tooltip_copy,
+                  onclick: @click_action,
                   class: "material-icons#{@icon_style}#{@size}#{@rotation}#{@css_class} #{@icon}"))
   end
 
