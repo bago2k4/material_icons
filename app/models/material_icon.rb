@@ -6,6 +6,7 @@ class MaterialIcon
   include ActionView::Helpers::TagHelper
 
   @@rotations = %w(45 90 135 180 225 270 315)
+  @@icon_styles = %w(outlined round sharp twotone)
 
   #
   # Reset will set all variables to nil
@@ -38,7 +39,7 @@ class MaterialIcon
   #
   # Define style methods
   #
-  %w(outlined round sharp twotone).each do |icon_style|
+  @@icon_styles.each do |icon_style|
     define_method(icon_style) do
       @icon_style = " #{icon_style}"
       self
@@ -133,6 +134,21 @@ class MaterialIcon
   #
   def html(html = {})
     @html = html
+    self
+  end
+
+  #
+  # Add style class to the :i tag
+  #
+  # == Paremeters:
+  # style::
+  #    String with style name, one of outlined round sharp twotone, any other value will be ignored
+  #
+  # == Returns:
+  # MaterialIcon instance
+  #
+  def icon_style(style = '')
+    @icon_style = " #{style}" if style.present? && @@icon_styles.include?(style)
     self
   end
 
