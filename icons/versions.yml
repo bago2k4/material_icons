@@ -1,9 +1,8 @@
 icons:
-  - 123
-  - 360
   - 10k
   - 10mp
   - 11mp
+  - 123
   - 12mp
   - 13mp
   - 14mp
@@ -26,6 +25,7 @@ icons:
   - 2mp
   - 30fps
   - 30fps_select
+  - 360
   - 3d_rotation
   - 3g_mobiledata
   - 3k
@@ -79,6 +79,7 @@ icons:
   - add_alert
   - add_box
   - add_business
+  - add_call
   - add_card
   - add_chart
   - add_circle
@@ -104,6 +105,7 @@ icons:
   - adf_scanner
   - adjust
   - admin_panel_settings
+  - adobe
   - ads_click
   - agriculture
   - air
@@ -120,6 +122,8 @@ icons:
   - airplane_ticket
   - airplanemode_active
   - airplanemode_inactive
+  - airplanemode_off
+  - airplanemode_on
   - airplay
   - airport_shuttle
   - alarm
@@ -138,6 +142,7 @@ icons:
   - all_out
   - alt_route
   - alternate_email
+  - amp_stories
   - analytics
   - anchor
   - android
@@ -150,6 +155,7 @@ icons:
   - app_registration
   - app_settings_alt
   - app_shortcut
+  - apple
   - approval
   - apps
   - apps_outage
@@ -179,6 +185,7 @@ icons:
   - aspect_ratio
   - assessment
   - assignment
+  - assignment_add
   - assignment_ind
   - assignment_late
   - assignment_return
@@ -187,6 +194,7 @@ icons:
   - assist_walker
   - assistant
   - assistant_direction
+  - assistant_navigation
   - assistant_photo
   - assured_workload
   - atm
@@ -223,6 +231,7 @@ icons:
   - balcony
   - ballot
   - bar_chart
+  - barcode_reader
   - batch_prediction
   - bathroom
   - bathtub
@@ -255,6 +264,7 @@ icons:
   - blinds
   - blinds_closed
   - block
+  - block_flipped
   - bloodtype
   - bluetooth
   - bluetooth_audio
@@ -273,6 +283,7 @@ icons:
   - bookmark_add
   - bookmark_added
   - bookmark_border
+  - bookmark_outline
   - bookmark_remove
   - bookmarks
   - border_all
@@ -414,6 +425,7 @@ icons:
   - cloud_queue
   - cloud_sync
   - cloud_upload
+  - cloudy_snowing
   - co2
   - co_present
   - code
@@ -435,6 +447,7 @@ icons:
   - compost
   - compress
   - computer
+  - confirmation_num
   - confirmation_number
   - connect_without_contact
   - connected_tv
@@ -457,6 +470,7 @@ icons:
   - control_camera
   - control_point
   - control_point_duplicate
+  - conveyor_belt
   - cookie
   - copy_all
   - copyright
@@ -540,6 +554,7 @@ icons:
   - devices
   - devices_fold
   - devices_other
+  - dew_point
   - dialer_sip
   - dialpad
   - diamond
@@ -554,12 +569,14 @@ icons:
   - directions_bus_filled
   - directions_car
   - directions_car_filled
+  - directions_ferry
   - directions_off
   - directions_railway
   - directions_railway_filled
   - directions_run
   - directions_subway
   - directions_subway_filled
+  - directions_train
   - directions_transit
   - directions_transit_filled
   - directions_walk
@@ -567,11 +584,13 @@ icons:
   - disabled_by_default
   - disabled_visible
   - disc_full
+  - discord
   - discount
   - display_settings
   - diversity_1
   - diversity_2
   - diversity_3
+  - dnd_forwardslash
   - dns
   - do_disturb
   - do_disturb_alt
@@ -611,6 +630,7 @@ icons:
   - draw
   - drive_eta
   - drive_file_move
+  - drive_file_move_outline
   - drive_file_move_rtl
   - drive_file_rename_outline
   - drive_folder_upload
@@ -624,17 +644,20 @@ icons:
   - earbuds
   - earbuds_battery
   - east
+  - eco
   - edgesensor_high
   - edgesensor_low
   - edit
   - edit_attributes
   - edit_calendar
+  - edit_document
   - edit_location
   - edit_location_alt
   - edit_note
   - edit_notifications
   - edit_off
   - edit_road
+  - edit_square
   - egg
   - egg_alt
   - eject
@@ -655,6 +678,7 @@ icons:
   - emergency_share
   - emoji_emotions
   - emoji_events
+  - emoji_flags
   - emoji_food_beverage
   - emoji_nature
   - emoji_objects
@@ -663,6 +687,7 @@ icons:
   - emoji_transportation
   - energy_savings_leaf
   - engineering
+  - enhance_photo_translate
   - enhanced_encryption
   - equalizer
   - error
@@ -687,6 +712,8 @@ icons:
   - explore
   - explore_off
   - exposure
+  - exposure_minus_1
+  - exposure_minus_2
   - exposure_neg_1
   - exposure_neg_2
   - exposure_plus_1
@@ -702,6 +729,7 @@ icons:
   - face_6
   - face_retouching_natural
   - face_retouching_off
+  - facebook
   - fact_check
   - factory
   - family_restroom
@@ -710,6 +738,7 @@ icons:
   - fastfood
   - favorite
   - favorite_border
+  - favorite_outline
   - fax
   - featured_play_list
   - featured_video
@@ -730,6 +759,7 @@ icons:
   - file_open
   - file_present
   - file_upload
+  - file_upload_off
   - filter
   - filter_1
   - filter_2
@@ -749,6 +779,7 @@ icons:
   - filter_frames
   - filter_hdr
   - filter_list
+  - filter_list_alt
   - filter_list_off
   - filter_none
   - filter_tilt_shift
@@ -757,6 +788,7 @@ icons:
   - find_replace
   - fingerprint
   - fire_extinguisher
+  - fire_hydrant
   - fire_hydrant_alt
   - fire_truck
   - fireplace
@@ -784,10 +816,13 @@ icons:
   - flip_to_back
   - flip_to_front
   - flood
+  - flourescent
+  - flourescent
   - fluorescent
   - flutter_dash
   - fmd_bad
   - fmd_good
+  - foggy
   - folder
   - folder_copy
   - folder_delete
@@ -803,6 +838,7 @@ icons:
   - forest
   - fork_left
   - fork_right
+  - forklift
   - format_align_center
   - format_align_justify
   - format_align_left
@@ -817,6 +853,7 @@ icons:
   - format_italic
   - format_line_spacing
   - format_list_bulleted
+  - format_list_bulleted_add
   - format_list_numbered
   - format_list_numbered_rtl
   - format_overline
@@ -827,6 +864,7 @@ icons:
   - format_strikethrough
   - format_textdirection_l_to_r
   - format_textdirection_r_to_l
+  - format_underline
   - format_underlined
   - fort
   - forum
@@ -839,6 +877,7 @@ icons:
   - free_breakfast
   - free_cancellation
   - front_hand
+  - front_loader
   - fullscreen
   - fullscreen_exit
   - functions
@@ -856,6 +895,7 @@ icons:
   - gif_box
   - girl
   - gite
+  - goat
   - golf_course
   - gpp_bad
   - gpp_good
@@ -923,6 +963,7 @@ icons:
   - highlight
   - highlight_alt
   - highlight_off
+  - highlight_remove
   - hiking
   - history
   - history_edu
@@ -932,6 +973,7 @@ icons:
   - hls_off
   - holiday_village
   - home
+  - home_filled
   - home_max
   - home_mini
   - home_repair_service
@@ -971,6 +1013,7 @@ icons:
   - incomplete_circle
   - indeterminate_check_box
   - info
+  - info_outline
   - input
   - insert_chart
   - insert_chart_outlined
@@ -991,6 +1034,7 @@ icons:
   - inventory_2
   - invert_colors
   - invert_colors_off
+  - invert_colors_on
   - ios_share
   - iron
   - iso
@@ -1011,13 +1055,16 @@ icons:
   - keyboard_arrow_up
   - keyboard_backspace
   - keyboard_capslock
+  - keyboard_command
   - keyboard_command_key
+  - keyboard_control
   - keyboard_control_key
   - keyboard_double_arrow_down
   - keyboard_double_arrow_left
   - keyboard_double_arrow_right
   - keyboard_double_arrow_up
   - keyboard_hide
+  - keyboard_option
   - keyboard_option_key
   - keyboard_return
   - keyboard_tab
@@ -1027,7 +1074,9 @@ icons:
   - kitesurfing
   - label
   - label_important
+  - label_important_outline
   - label_off
+  - label_outline
   - lan
   - landscape
   - landslide
@@ -1043,6 +1092,7 @@ icons:
   - leaderboard
   - leak_add
   - leak_remove
+  - leave_bags_at_home
   - legend_toggle
   - lens
   - lens_blur
@@ -1054,6 +1104,7 @@ icons:
   - light_mode
   - lightbulb
   - lightbulb_circle
+  - lightbulb_outline
   - line_axis
   - line_style
   - line_weight
@@ -1070,6 +1121,7 @@ icons:
   - local_activity
   - local_airport
   - local_atm
+  - local_attraction
   - local_bar
   - local_cafe
   - local_car_wash
@@ -1094,18 +1146,23 @@ icons:
   - local_play
   - local_police
   - local_post_office
+  - local_print_shop
   - local_printshop
+  - local_restaurant
   - local_see
   - local_shipping
   - local_taxi
   - location_city
   - location_disabled
+  - location_history
   - location_off
   - location_on
+  - location_pin
   - location_searching
   - lock
   - lock_clock
   - lock_open
+  - lock_outline
   - lock_person
   - lock_reset
   - login
@@ -1168,6 +1225,8 @@ icons:
   - merge
   - merge_type
   - message
+  - messenger
+  - messenger_outline
   - mic
   - mic_external_off
   - mic_external_on
@@ -1214,21 +1273,27 @@ icons:
   - motion_photos_on
   - motion_photos_pause
   - motion_photos_paused
+  - motorcycle
   - mouse
   - move_down
   - move_to_inbox
   - move_up
   - movie
   - movie_creation
+  - movie_edit
   - movie_filter
   - moving
   - mp
   - multiline_chart
   - multiple_stop
+  - multitrack_audio
   - museum
   - music_note
   - music_off
   - music_video
+  - my_library_add
+  - my_library_books
+  - my_library_music
   - my_location
   - nat
   - nature
@@ -1272,6 +1337,7 @@ icons:
   - no_food
   - no_luggage
   - no_meals
+  - no_meals_ouline
   - no_meeting_room
   - no_photography
   - no_sim
@@ -1297,7 +1363,10 @@ icons:
   - notifications_active
   - notifications_none
   - notifications_off
+  - notifications_on
   - notifications_paused
+  - now_wallpaper
+  - now_widgets
   - numbers
   - offline_bolt
   - offline_pin
@@ -1313,9 +1382,11 @@ icons:
   - open_in_new_off
   - open_with
   - other_houses
+  - outbond
   - outbound
   - outbox
   - outdoor_grill
+  - outgoing_mail
   - outlet
   - outlined_flag
   - output
@@ -1324,10 +1395,12 @@ icons:
   - pageview
   - paid
   - palette
+  - pallet
   - pan_tool
   - pan_tool_alt
   - panorama
   - panorama_fish_eye
+  - panorama_fisheye
   - panorama_horizontal
   - panorama_horizontal_select
   - panorama_photosphere
@@ -1348,6 +1421,7 @@ icons:
   - pause_presentation
   - payment
   - payments
+  - paypal
   - pedal_bike
   - pending
   - pending_actions
@@ -1357,8 +1431,10 @@ icons:
   - people_outline
   - percent
   - perm_camera_mic
+  - perm_contact_cal
   - perm_contact_calendar
   - perm_data_setting
+  - perm_device_info
   - perm_device_information
   - perm_identity
   - perm_media
@@ -1421,6 +1497,7 @@ icons:
   - picture_in_picture_alt
   - pie_chart
   - pie_chart_outline
+  - pie_chart_outlined
   - pin
   - pin_drop
   - pin_end
@@ -1432,6 +1509,7 @@ icons:
   - plagiarism
   - play_arrow
   - play_circle
+  - play_circle_fill
   - play_circle_filled
   - play_circle_outline
   - play_disabled
@@ -1491,12 +1569,17 @@ icons:
   - queue
   - queue_music
   - queue_play_next
+  - quick_contacts_dialer
+  - quick_contacts_mail
   - quickreply
   - quiz
+  - quora
   - r_mobiledata
   - radar
   - radio
   - radio_button_checked
+  - radio_button_off
+  - radio_button_on
   - radio_button_unchecked
   - railway_alert
   - ramen_dining
@@ -1507,6 +1590,7 @@ icons:
   - raw_on
   - read_more
   - real_estate_agent
+  - rebase_edit
   - receipt
   - receipt_long
   - recent_actors
@@ -1514,6 +1598,7 @@ icons:
   - record_voice_over
   - rectangle
   - recycling
+  - reddit
   - redeem
   - redo
   - reduce_capacity
@@ -1652,6 +1737,7 @@ icons:
   - settings_bluetooth
   - settings_brightness
   - settings_cell
+  - settings_display
   - settings_ethernet
   - settings_input_antenna
   - settings_input_component
@@ -1668,12 +1754,15 @@ icons:
   - severe_cold
   - shape_line
   - share
+  - share_arrival_time
   - share_location
+  - shelves
   - shield
   - shield_moon
   - shop
   - shop_2
   - shop_two
+  - shopify
   - shopping_bag
   - shopping_basket
   - shopping_cart
@@ -1728,9 +1817,11 @@ icons:
   - smoking_rooms
   - sms
   - sms_failed
+  - snapchat
   - snippet_folder
   - snooze
   - snowboarding
+  - snowing
   - snowmobile
   - snowshoeing
   - soap
@@ -1825,6 +1916,8 @@ icons:
   - subtitles_off
   - subway
   - summarize
+  - sunny
+  - sunny_snowing
   - superscript
   - supervised_user_circle
   - supervisor_account
@@ -1836,6 +1929,7 @@ icons:
   - swap_horiz
   - swap_horizontal_circle
   - swap_vert
+  - swap_vert_circle
   - swap_vertical_circle
   - swipe
   - swipe_down
@@ -1865,6 +1959,7 @@ icons:
   - system_security_update_warning
   - system_update
   - system_update_alt
+  - system_update_tv
   - tab
   - tab_unselected
   - table_bar
@@ -1883,6 +1978,7 @@ icons:
   - task
   - task_alt
   - taxi_alert
+  - telegram
   - temple_buddhist
   - temple_hindu
   - terminal
@@ -1912,6 +2008,7 @@ icons:
   - thumb_up_off_alt
   - thumbs_up_down
   - thunderstorm
+  - tiktok
   - time_to_leave
   - timelapse
   - timeline
@@ -1949,8 +2046,10 @@ icons:
   - travel_explore
   - trending_down
   - trending_flat
+  - trending_neutral
   - trending_up
   - trip_origin
+  - trolley
   - troubleshoot
   - try
   - tsunami
@@ -2005,6 +2104,7 @@ icons:
   - video_camera_back
   - video_camera_front
   - video_chat
+  - video_collection
   - video_file
   - video_label
   - video_library
@@ -2018,6 +2118,7 @@ icons:
   - view_array
   - view_carousel
   - view_column
+  - view_comfortable
   - view_comfy
   - view_comfy_alt
   - view_compact
@@ -2043,6 +2144,7 @@ icons:
   - voicemail
   - volcano
   - volume_down
+  - volume_down_alt
   - volume_mute
   - volume_off
   - volume_up
@@ -2052,6 +2154,9 @@ icons:
   - vpn_lock
   - vrpano
   - wallet
+  - wallet_giftcard
+  - wallet_membership
+  - wallet_travel
   - wallpaper
   - warehouse
   - warning
@@ -2072,6 +2177,7 @@ icons:
   - wb_iridescent
   - wb_shade
   - wb_sunny
+  - wb_twighlight
   - wb_twilight
   - wc
   - web
@@ -2079,6 +2185,7 @@ icons:
   - web_asset_off
   - web_stories
   - webhook
+  - wechat
   - weekend
   - west
   - whatshot
@@ -2101,18 +2208,23 @@ icons:
   - wifi_protected_setup
   - wifi_tethering
   - wifi_tethering_error
+  - wifi_tethering_error_rounded
   - wifi_tethering_off
   - wind_power
   - window
   - wine_bar
   - woman
   - woman_2
+  - woo_commerce
+  - wordpress
   - work
   - work_history
   - work_off
   - work_outline
   - workspace_premium
   - workspaces
+  - workspaces_filled
+  - workspaces_outline
   - wrap_text
   - wrong_location
   - wysiwyg
