@@ -12,7 +12,7 @@ class MaterialIcon
   # Reset will set all variables to nil
   #
   def reset
-    @icon, @rotation, @size, @html, @style, @icon_style, @icon_names, @tooltip_copy, @click_action, @css_class = [nil] * 6
+    @icon, @rotation, @size, @html, @style, @icon_style, @icon_names, @tooltip_copy, @click_action, @css_class, @id = [nil] * 11
     self
   end
 
@@ -58,6 +58,21 @@ class MaterialIcon
   #
   def shape(name)
     @icon = name.to_s
+    self
+  end
+
+  #
+  # Set the id of the :i tag
+  #
+  # == Paremeters:
+  # id::
+  #    String of the id
+  #
+  # == Returns:
+  # MaterialIcon instance
+  #
+  def id(id_selector)
+    @id = id_selector
     self
   end
 
@@ -168,6 +183,7 @@ class MaterialIcon
                   style: @style,
                   title: @tooltip_copy,
                   onclick: @click_action,
+                  id: @id,
                   class: "material-icons#{@icon_style}#{@size}#{@rotation}#{@css_class} #{@icon}"))
   end
 
