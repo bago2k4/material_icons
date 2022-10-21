@@ -147,7 +147,7 @@ class MaterialIcon
   # == Returns:
   # MaterialIcon instance
   #
-  def html(html = {})
+  def html_attrs(html = {})
     @html = html
     self
   end

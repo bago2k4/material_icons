@@ -93,7 +93,7 @@ Material Icons provide two helpers to build the HTML code of icons. The methods 
 # <i class="material-icons r90 my_class">face</i>
 
 # Custom css and data attributes
-<%= mi.face.css_class('my_class').html(data: {id: 1}) %>
+<%= mi.face.css_class('my_class').html_attrs(data: {id: 1}) %>
 # <i data-id="1" class="material-icons my_class">face</i>
 ```
 
@@ -101,9 +101,13 @@ Allowed methods are:
 
 ```
 # Rotation methods
+r45
 r90
+r135
 r180
+r225
 r270
+r315
 flip_horizontal
 flip_vertical
 
@@ -120,7 +124,19 @@ css_class('classes')
 style('margin-top: 5px;')
 
 # Add some HTML attributes to an icon. This method receive a Hash
-html({ data: { id: 1 } })
+html_attrs({ data: { id: 1 } })
+
+# Add the id
+id('element-id')
+
+# Add onclick
+click('javascript: code();)
+
+# Add a tooltip
+tooltip_copy('My tooltip here')
+
+# Set the icon style
+icon_style('outlined') // accept only: outlined, round, sharp and twotone
 ```
 
 Remember this is a helper, you always can use HTML syntax ;).
